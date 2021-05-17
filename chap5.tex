@@ -1,0 +1,273 @@
+
+
+
+%% refer q31.tex
+%% include the topic name as per u r project in appendix
+\chapter{Design and Implementation}
+
+\section{Hardware}
+\subsection{Arduino UNO}
+ 
+	\begin{figure}[h]
+		\centering
+	\includegraphics[width=60mm,scale=1]{41}
+	\caption{Arduino Uno}
+	\label{Arduino}
+	
+\end{figure}
+ 
+ Arduino is an open-source platform used for building electronics projects. Arduino consists of both a physical programmable circuit board (often referred to as a microcontroller) and a piece of software, or IDE (Integrated Development Environment) that runs on your computer, used to write and upload computer code to the physical board. The Arduino platform has become quite popular with people just starting out with electronics, and for good reason. Unlike most previous programmable circuit boards, the Arduino does not need a separate piece of hardware (called a programmer) in order to load new code onto the board you can simply use a USB cable. Additionally, the Arduino IDE uses a simplified version of C++, making it easier to learn to program. Arduino uno has 14 digital input/output pins (of which 6 can be used as PWM outputs), 6 analog inputs, a USB connection, a power jack, a reset button and more. It contains everything needed to support the microcontroller; simply connect it to a computer with a USB cable or power it with a AC-to-DC adapter or battery.
+ 
+ Arduino was born at the Ivrea Interaction Design Institute as an easy tool for fast prototyping, aimed at students without a background in electronics and programming. As soon as it reached a wider community, the Arduino board started changing to adapt to new needs and challenges, differentiating its offer from simple 8-bit boards to products for IoT applications, wearable, 3D printing, and embedded environments. All Arduino boards are completely open-source, empowering users to build them independently and eventually adapt them to their particular needs. The software, too, is open-source, and it is growing through the contributions of users worldwide.
+ 
+ 
+\newpage
+\subsection{Bolt WIFI Module} 
+
+	\begin{figure}[h]
+		\centering
+	\includegraphics[width=120mm,scale=1]{42}
+	\caption{Bolt WIFI Module}
+	\label{Bolt WIFI Module}
+	
+\end{figure}
+
+ The bolt Wifi module contains ESP8266 Wifi module. The ESP8266 Wifi Module is a self-contained SOC with integrated TCP/IP protocol stack that can give any microcontroller access to your Wifi network. The ESP8266 is capable of either hosting an application or offloading all Wi-Fi networking functions from another application processor. The ESP8266 module is an extremely cost effective board. 
+ 
+ This module has a powerful enough on-board processing and storage capability that allows it to be integrated with the sensors and other application specific devices through its GPIOs with minimal development up-front and minimal loading during runtime. Its high degree of on-chip integration allows for minimal external circuitry, including the front-end module, is designed to occupy minimal PCB area.
+ 
+\newpage
+\subsection{HC-SR04 Ultrasonic Sensor}
+ 
+	\begin{figure}[h]
+		\centering
+	\includegraphics[width=60mm,scale=1]{43}
+	\caption{HC-SR04 Ultrasonic Sensor}
+	\label{HC-SR04 Ultrasonic Sensor}
+	
+\end{figure}
+
+ The HC-SR04 ultrasonic sensor uses SONAR to determine the distance of an object just like the bats do. It offers excellent non-contact range detection with high accuracy and stable readings in an easy-to-use package from 2 cm to 400 cm or 1” to 13 feet.  It comes complete with ultrasonic transmitter and receiver module. Operating voltage: +5V  Theoretical Measuring Distance: 2cm to 450cm. Practical Measuring Distance: 2cm to 80cm.
+ 
+  Power the Sensor using a regulated +5V through the Vcc ad Ground pins of the sensor. The current consumed by the sensor is less than 15mA and hence can be directly powered by the on board 5V pins (If available). The Trigger and the Echo pins are both I/O pins and hence they can be connected to I/O pins of the microcontroller. To start the measurement, the trigger pin has to be made high for 10uS and then turned off. This action will trigger an ultrasonic wave at frequency of 40Hz from the transmitter and the receiver will wait for the wave to return. Once the wave is returned after it getting reflected by any object the Echo pin goes high for a particular amount of time which will be equal to the time taken for the wave to return back to the sensor.
+ 
+\newpage
+
+\subsection{IR Sensor}
+
+	\begin{figure}[h]
+		\centering
+	\includegraphics[width=60mm,scale=1]{44}
+	\caption{IR Sensor}
+	\label{IR Sensor}
+	
+\end{figure}
+
+ IR sensor is an electronic device, that emits the light in order to sense some object of the surroundings. An IR sensor can measure the heat of an object as well as detects the motion. Usually, in the infrared spectrum, all the objects radiate some form of thermal radiation. These types of radiations are invisible to our eyes, but infrared sensor can detect these radiations.
+ 
+  The emitter is simply an IR LED (Light Emitting Diode) and the detector is simply an IR photodiode . Photodiode is sensitive to IR light of the same wavelength which is emitted by the IR LED. When IR light falls on the photodiode, the resistances and the output voltages will change in proportion to the magnitude of the IR light received.
+ 
+\newpage 
+\subsection{Buzzer}
+
+	\begin{figure}[h]
+		\centering
+	\includegraphics[width=60mm,scale=1]{45}
+	\caption{Buzzer}
+	\label{Buzzer}
+	
+\end{figure}
+
+ A buzzer or beeper is an audio signalling device, which may be mechanical,electromechanical, or piezoelectric (piezo for short). Typical uses of buzzers and beepers include alarm devices, timers, of user input such as a mouse click or keystroke.
+ 
+ The buzzer consists of an outside case with two pins to attach it to power and ground. Inside is a piezo element, which consists of a central ceramic disc surrounded by a metal (often bronze)vibration disc. When current is applied to the buzzer it causes the ceramic disk to contract or expand.A buzzer converts
+electricity into sound when current flows through it. It is drawn as half a circle with two short lines extending down.  
+ 
+\newpage
+
+\subsection{LCD Display}
+
+	\begin{figure}[h]
+		\centering
+	\includegraphics[width=60mm,scale=1]{46}
+	\caption{LCD Display}
+	\label{LCD Display}
+	
+\end{figure}
+
+ LCD (Liquid Crystal Display) is a type of at panel display which uses liquid crystals in its primary form of operation. LEDs have a large and varying set of use cases for consumers and businesses, as they can be commonly found in smartphones, televisions, computer monitors and instrument panels. Liquid crystal display technology works by blocking light.
+  
+ At the same time, electrical currents cause the liquid crystal molecules to align to allow varying levels of light to pass through to the second substrate and create the colors and images that you see.Since LCD screens do not use phosphors, they rarely suffer image burn-in when a static image is displayed on a screen for a long time, e.g, the table frame for an airline light schedule on an indoor sign. LCDs are, however, susceptible to image persistence.The LCD screen is more energy-efficient and can be disposed of more safely than a CRT can. Its low electrical power consumption.
+ 
+\newpage
+
+\subsection{Mini Pump}
+
+	\begin{figure}[h]
+		\centering
+	\includegraphics[width=60mm,scale=1]{47}
+	\caption{Mini Pump}
+	\label{Mini Pump}
+	
+\end{figure}
+Submersible pumps in general are designed to be fully submerged into the water. Submersible pumps are placed within the reservoir of water that requires pumping out, which is why they are normally used for drainage in floods, sewerage pumping, emptying ponds or even as pond filters.
+
+A mini submersible water pump is a centrifugal water pump, which means that it uses a motor to power an impeller that is designed to rotate and push water outwards. The motor is located in a waterproof seal and closely connected to the body of the water pump which it powers.
+
+Mini water motor pump is mini type to transfer sanitizer from lower place to higher place or too far place.It is used in refilling system to Refill the sanitizer bottle.
+
+\newpage
+
+\subsection{L293D MOTOR DRIVER IC}
+
+	\begin{figure}[h]
+		\centering
+	\includegraphics[width=60mm,scale=1]{48}
+	\caption{L293D MOTOR DRIVER IC}
+	\label{L293D MOTOR DRIVER IC}
+	
+\end{figure}
+
+L293D is a typical Motor driver or Motor Driver IC which allows DC motor to drive on either direction. L293D is a 16-pin IC which can control a set of two DC motors simultaneously in any direction. It means that you can control two DC motor with a single L293D IC.The l293d can drive small and quiet big motors as well.
+
+It works on the concept of H-bridge. H-bridge is a circuit which allows the voltage to be flown in either direction. As you know voltage need to change its direction for being able to rotate the motor in clockwise or anticlockwise direction, Hence H-bridge IC are ideal for driving a DC motor.In a single L293D chip there are two h-Bridge circuit inside the IC which can rotate two dc motor independently. Due its size it is very much used in robotic application for controlling DC motors.
+
+\newpage
+
+\section{Software}
+\subsection{Ardiuno IDE}
+
+\begin{figure}[h]
+		\centering
+	\includegraphics[width=120mm,scale=1]{49}
+	\caption{Ardiuno IDE}
+	\label{Ardiuno IDE}
+	
+\end{figure}
+
+The Arduino Integrated Development Environment (IDE) is a cross-platform application (for Windows, macOS, Linux) that is written in functions from C and C++. It is used to write and upload programs to Arduino compatible boards. The Arduino IDE supplies a software library from the Wiring project, which provides
+many common input and output procedures. User-written code only requires two basic functions, for starting the sketch and the main program loop, that are compiled and linked with a program stub main() into an executable cyclic executive program with the GNU toolchain, also included with the IDE distribution. Active development of the Arduino software is hosted by GitHub.The open source Arduino IDE editor allows you to write code and easily load it to the controllers via USB. The Arduino IDE supports many different   controllers besides Arduino kits (Uno, Pro Mini, Mega, Due etc.).
+
+This software works on Windows, Mac OS X and Linux. The Arduino IDE is written in the Java language and is based on the language named Processing/Wiring. The libraries are written in C and C ++ languages and compiled with AVR-GCC and AVR Libc. There are many other microcontrollers and microcontroller platforms available for physical computing. Parallax Basic Stamp, Netmedia’s BX-24, Phidgets, MIT’s Handyboard, and many others offer similar functionality. All of these tools take the messy details of microcontroller programming and wrap it up in an easy-to-use package. Arduino also simplifies the process of working with microcontrollers its Simple, clear programming environment and Inexpensive.
+
+\newpage
+
+\subsection{Virtual Box}
+
+\begin{figure}[h]
+		\centering
+	\includegraphics[width=120mm,scale=1]{51}
+	\caption{Virtual Box}
+	\label{Virtual Box}
+	
+\end{figure}
+
+Oracle VM VirtualBox is a free and open-source hosted hypervisor for x86 virtualization, developed by Oracle Corporation. Created by Innotek, it was acquired by Sun Microsystems in 2008, which was in turn acquired by Oracle in 2010. VirtualBox may be installed on Windows, macOS, Linux, Solaris and OpenSolaris. There are also ports to FreeBSD and Genode. It supports the creation and management of guest virtual machines running Windows, Linux, BSD, OS/2, Solaris, Haiku, and OSx86,as well as limited virtualization of macOS guests on Apple hardware. For some guest operating systems, a "Guest Additions" package of device drivers and system applications is available,which typically improves performance, especially that of graphics.
+
+\newpage
+
+\subsection{Twilio}
+
+
+
+\hspace{0.5cm} Twilio is a third-party SMS functionality provider. It is a cloud communications platform as a service (PaaS) company. Twilio allows software developers to programmatically make and receive phone calls and also send and receive text messages using its web service APIs.
+
+\vspace{0.4cm}
+
+\begin{figure}[h]
+		\centering
+	\includegraphics[width=120mm,scale=1]{50}
+	\caption{Twilio}
+	\label{Twilio}
+	
+\end{figure}
+
+Creating an account on Twilio
+
+\vspace{0.4cm}
+
+Step 1: Open https://www.twilio.com/  in browser.
+\vspace{0.4cm}
+
+Step 2: Click on  Get a Free API Key button to sign up.
+
+\vspace{0.4cm}
+Step 3: Fill all the necessary details in SIGN UP form.
+
+\vspace{0.4cm}
+Step 4: To verify they will ask for your phone number. Choose India as an option in the dropdown and then enter your phone number.
+
+\vspace{0.4cm}
+Step 5: Click on "Products". Now enable the SMS services by clicking on two checkboxes for Programmable SMS and Phone Numbers. Once you have done this, scroll to the bottom of the screen and click on "Continue".
+
+\vspace{0.4cm}
+Step 6: Now, you will need to give a name for your project. I have given the name as My Project. Click on "Continue" once you have entered the project name.
+
+\vspace{0.4cm}
+Step 7: Click on "Skip this step" when it asks you to Invite a Teammate.
+
+\vspace{0.4cm}
+Step 8: Your project should be created at this point. Click on "Project Info" to view the account credentials which is required for your projects.
+
+\vspace{0.4cm}
+Step 9: You can view the Account SID and Auth token on this page. The Auth token is not visible by   default, you can click on "view" button to make the Auth token visible.
+
+\vspace{0.4cm}
+Step 10: From the drop-down menu, choose "Programmable SMS". Now click on Get Started button to generate  phone number.
+
+\vspace{0.4cm}
+Step 11: Click on Get a number button.
+
+\vspace{0.4cm}
+Step 12: Then a popup will appear. Click on Choose this number button.
+
+\vspace{0.4cm}
+Step 13: Then a popup will appear which will have the final number.
+
+
+\vspace{0.5cm}
+Copy the SID, AUTH TOKEN, FROM NUMBER for entering in the python code.
+
+
+\vspace{0.4cm}
+Install Ubuntu on Virtual Box.
+
+Go to your ubuntu terminal and install the required software using the following instructions.
+
+\vspace{0.2cm}
+
+\textbf{sudo apt-get -y update}
+
+\textbf{sudo apt install python3-pip}
+
+\textbf{sudo pip3 install boltiot}
+
+\vspace{0.5cm}
+
+
+
+\newpage
+
+\section{Flow Chart}
+
+\begin{figure}[h]
+		\centering
+	\includegraphics[width=135mm,scale=1]{flowchart1}
+	\caption{Bidirectional Visitor Couter Flow Chart}
+	\label{Bidirectional Visitor Couter Flow Chart}
+	
+\end{figure}
+
+\begin{figure}[h]
+		\centering
+	\includegraphics[width=150mm,scale=1]{flowchart2}
+	\caption{Dispenser and Autofilling tank system Flow Chart}
+	\label{Dispenser and Autofilling tank system Flow Chart}
+	
+\end{figure}
+
+
+
+
+
+
